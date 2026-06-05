@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies</title>
+        <!--Insérer le favicon-->
+        <link rel="shortcut icon" href="Images/icone.png">
+        <!--link css-->
+        <link rel="stylesheet" href="style.css">
+        <script src="Hobbies.js"></script>
+</head>
+<body>
+        <header>
+            <a href="index.html" style="color: black; text-decoration: none; font-size: larger; text-align: left;"><img src="Images/retour.png" width="20" height="20" alt="Image GI"> Retour </a> 
+            <h1 style="text-align: center;">Simon Tannou</h1>
+        </header>
+</body>
+</html>
+
+    <div class="hobbies-container">
+
+        <div class="hobby">
+            <div class="titre" onclick="toggleText('football')">
+                Football
+            </div>
+            <div id="football" class="contenu">
+                <div style="text-align: center;">
+                    <img src="Images/IMG_9447.jpg" height="25%" width="25%">
+                </div> <br>
+                <br>
+                <p>Depuis petit je joue au football. J'ai d'abord commencé à Pencran dans le finistère, j'ai pu y jouer de 5 ans à 15 ans.<br>
+                <br>
+                Ensuite j'ai fait une année à Landerneau (ville voisine) et après mon déménagement dans le Morbihan, de mes 16 ans jusqu'à actuellement, j'ai fait trois clubs différents.</p>
+                <br>
+                <ul>
+                        <li>Le GJPL : Groupement Jeune du Pays de Locmiquélic </li>
+                        <li>Le Plouhinec FC</li>
+                        <li>L'ESM : l'Étoile Sportive de Merlevenez</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="hobby">
+            <div class="titre" onclick="toggleText('societe')">
+                Jeux de société
+            </div>
+            <div id="societe" class="contenu">
+                
+                <div style="text-align: center;">
+                    <img src="Images/mastermind.jpg" height="25%" width="25%">
+                    <img src="Images/Catan.jpg" height="25%" width="25%">
+                    <img src="Images/talisman-5eme-edition.jpg" height="25%" width="25%">
+                </div> <br>
+                <br>
+
+
+                <p>J'aime beaucoup jouer aux jeux de société et principalement aux jeux de réflexion ou encore ceux de rôles.<br>
+                Dans ma liste de favoris on peut retrouver des jeux comme :</p>
+
+                <ul>
+                    <li>
+                        <b>Mastermind</b>
+                        <ul>
+                            <li>L'un des joueurs crée un code secret avec des pions de couleur, et l'autre doit le décoder en un nombre limité de tentatives.</li>
+                            <li>À chaque essai, le créateur du code donne des indices (pions noirs ou blancs) pour indiquer si les couleurs sont bien placées ou simplement présentes.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Catan</b>
+                        <ul>
+                            <li>Les joueurs incarnent des colons qui cherchent à s'installer sur l'île de Catan.</li>
+                            <li>Pour l'emporter, il faut récolter des ressources (bois, blé, argile...), construire des routes, des villages et des villes.</li>
+                            <li>L'ambiance repose beaucoup sur le commerce et le troc de ressources entre les joueurs.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Talisman</b>
+                        <ul>
+                            <li>Dans un univers de Dark Fantasy, chaque joueur incarne un héros unique (guerrier, sorcier, voleur...) doté de forces et de faiblesses.</li>
+                            <li>Le but est de traverser des contrées dangereuses, de combattre des monstres et de récupérer des objets magiques pour obtenir le légendaire Commandement.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="hobby">
+            <div class="titre" onclick="toggleText('jeuxvideo')">
+                Jeux vidéo
+            </div>
+
+            <div id="jeuxvideo" class="contenu">
+                
+                <div class="carousel-container">
+                    <button class="arrow-btn prev-btn" onclick="changeSlide(-1)">&#10094;</button>
+                    
+                    <div class="carousel-images">
+                        <img src="Images/lol.jpg" class="slide-img active" alt="League of Legends">
+                        <img src="Images/nms.png" class="slide-img" alt="No Man's Sky">
+                        <img src="Images/pokemon.png" class="slide-img" alt="Pokémon">
+                    </div>
+                    
+                    <button class="arrow-btn next-btn" onclick="changeSlide(1)">&#10095;</button>
+                </div>
+
+                <p class="intro-text">Je joue de temps à autre aux jeux vidéo. Et parmi tous, on peut retrouver des jeux de tous les types. Comme :</p>
+
+                <div class="descriptions-container">
+                    <div class="game-desc active">
+                        <b>League of Legends (LoL)</b>
+                        <ul>
+                            <li>Un jeu de stratégie et d'arène de bataille en ligne (MOBA) ultra compétitif qui se joue en équipe de 5 contre 5.</li>
+                            <li>L'objectif est de détruire le Nexus ennemi en choisissant un champion parmi plus de 160 personnages disponibles, chacun ayant ses propres compétences.</li>
+                        </ul>
+                    </div>
+
+                    <div class="game-desc">
+                        <b>No Man's Sky (NMS)</b>
+                        <ul>
+                            <li>Un jeu de science-fiction, d'exploration et de survie au cœur d'un univers infini généré de manière procédurale.</li>
+                            <li>Le joueur peut voyager de planète en planète sans transition, récolter des ressources, construire des bases et piloter son propre vaisseau spatial.</li>
+                        </ul>
+                    </div>
+
+                    <div class="game-desc">
+                        <b>Pokémon</b>
+                        <ul>
+                            <li>La célèbre franchise de jeux de rôle (RPG) où l'on explore des régions variées à la recherche de créatures fantastiques.</li>
+                            <li>Le but est de capturer, d'entraîner ses Pokémon et de remporter des combats stratégiques au tour par tour pour devenir le meilleur d'entre tous.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hobby">
+            <div class="titre" onclick="toggleText('programmation')">
+                Programmation
+            </div>
+
+            <div id="programmation" class="contenu">
+                
+                <p class="intro-text">En parallèle de mes études et depuis quelque temps, je développe mes compétences en programmation à travers des projets concrets.</p>
+
+                <ul class="liste-projets">
+                    
+                    <li class="projet-item">
+                        <div class="projet-entete">
+                            <a href="https://www.youtube.com/watch?v=2jMcuKdRh2w" target="_blank" class="btn-youtube"><img src="Images/rpg.jpg" style="width: 250px; height: 150px;"></a>
+                            <div class="projet-texte">
+                                <b>Développement d'un Action-RPG 2D </b>
+                                <ul>
+                                    <li>Moteur utilisé : Godot 4 (GDScript)</li>
+                                    <li>Architecture & Physique : Gestion d'une machine à états complexes (State Machine) pour lier les animations fluides en 8 directions aux mécaniques d'attaques et de projectiles.</li>
+                                    <li>Intelligence Artificielle : Programmation de comportements d'ennemis autonomes (patrouille, détection de zone et poursuite du joueur).</li>
+                                    <li>Level Design : Utilisation avancée des Tilemaps de Godot 4 pour la création d'environnements de jeu structurés avec gestion précise des masques et couches de collision.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="projet-item">
+                        <div class="projet-entete">
+                            <a href="https://www.youtube.com/watch?v=2jMcuKdRh2w" target="_blank" class="btn-youtube"><img src="Images/jeu de carte.jpg" style="width: 250px; height: 150px;"></a>
+                            <div class="projet-texte">
+                                <b>Conception d'un Jeu de Cartes Tactique</b>
+                                <ul>
+                                    <li>Moteur utilisé : Godot 4 (GDScript)</li>
+                                    <li>Data-Driven Design : Utilisation rigoureuse des Resources personnalisées pour dissocier les données pures des cartes (coût, effets de sort) de leur affichage visuel.</li>
+                                    <li>Interface Utilisateur (UI) : Conception d'interfaces dynamiques gérant la pioche, la défausse et le réajustement automatique de la main du joueur.</li>
+                                    <li>Logique globale : Développement d'un système complet au tour par tour géré par signaux pour automatiser les phases de jeu (pioche, action, fin de tour).</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</html>
